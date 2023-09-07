@@ -1,0 +1,14 @@
+C:\Users\v.natyazhenko\source\repos\OtusHomeWork12\OtusHomeWork12_1\bin\Debug\net7.0\OtusHomeWork12_1.exe
+C:\Users\v.natyazhenko\source\repos\OtusHomeWork12\OtusHomeWork12_1\bin\Debug\net7.0\OtusHomeWork12_1.deps.json
+C:\Users\v.natyazhenko\source\repos\OtusHomeWork12\OtusHomeWork12_1\bin\Debug\net7.0\OtusHomeWork12_1.runtimeconfig.json
+C:\Users\v.natyazhenko\source\repos\OtusHomeWork12\OtusHomeWork12_1\bin\Debug\net7.0\OtusHomeWork12_1.dll
+C:\Users\v.natyazhenko\source\repos\OtusHomeWork12\OtusHomeWork12_1\bin\Debug\net7.0\OtusHomeWork12_1.pdb
+C:\Users\v.natyazhenko\source\repos\OtusHomeWork12\OtusHomeWork12_1\obj\Debug\net7.0\OtusHomeWork12_1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\v.natyazhenko\source\repos\OtusHomeWork12\OtusHomeWork12_1\obj\Debug\net7.0\OtusHomeWork12_1.AssemblyInfoInputs.cache
+C:\Users\v.natyazhenko\source\repos\OtusHomeWork12\OtusHomeWork12_1\obj\Debug\net7.0\OtusHomeWork12_1.AssemblyInfo.cs
+C:\Users\v.natyazhenko\source\repos\OtusHomeWork12\OtusHomeWork12_1\obj\Debug\net7.0\OtusHomeWork12_1.csproj.CoreCompileInputs.cache
+C:\Users\v.natyazhenko\source\repos\OtusHomeWork12\OtusHomeWork12_1\obj\Debug\net7.0\OtusHomeWork12_1.dll
+C:\Users\v.natyazhenko\source\repos\OtusHomeWork12\OtusHomeWork12_1\obj\Debug\net7.0\refint\OtusHomeWork12_1.dll
+C:\Users\v.natyazhenko\source\repos\OtusHomeWork12\OtusHomeWork12_1\obj\Debug\net7.0\OtusHomeWork12_1.pdb
+C:\Users\v.natyazhenko\source\repos\OtusHomeWork12\OtusHomeWork12_1\obj\Debug\net7.0\OtusHomeWork12_1.genruntimeconfig.cache
+C:\Users\v.natyazhenko\source\repos\OtusHomeWork12\OtusHomeWork12_1\obj\Debug\net7.0\ref\OtusHomeWork12_1.dll

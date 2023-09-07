@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "OtusHomeWork12_1/1.0.0": {
+        "runtime": {
+          "OtusHomeWork12_1.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "OtusHomeWork12_1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
