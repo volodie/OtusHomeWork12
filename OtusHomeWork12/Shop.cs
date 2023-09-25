@@ -6,28 +6,33 @@ namespace OtusHomeWork12
 {
     internal class Shop 
     {
-        public class DeleteFromCollection : Exception
-        { 
-            public DeleteFromCollection(string message) : base(message) { }
-        }
-        public void Add(ObservableCollection<Item> itemL, Item item)
+        ObservableCollection<Item> _items;
+        List<Customer> _customers;
+        public Shop()
         {
-           itemL.Add(item);
+            _items = new ObservableCollection<Item>();
+            _customers = new List<Customer>();
         }
-        public void Remove(ObservableCollection<Item> itemL, int itNumber)
+        public void Add(Item item)
         {
-            try
+            if (_items.Contains(item))
+                Console.WriteLine($"Товар с ID:{item.Id} уже есть");
+            else _items.Add(item);
+        }
+        public void Remove(int id)
+        {
+            var item = _items.FirstOrDefault(x => x.Id == id, null);
+            if (item != null)
+                _items.Remove(item);
+            else Console.WriteLine($"Товара с ID:{id} нет");
+        }
+        public void AddCustomer(Customer customer)
+        {
+            if (customer != null)
             {
-                itemL.RemoveAt(itNumber);
+                _customers.Add(customer);
+                _items.CollectionChanged += customer.OnItemChanged;
             }
-            catch (Exception)
-            {
-                var ue = new DeleteFromCollection($"Вы указали не верный номер товара для удаления!");
-                throw ue;
-            }
-            
         }
     }
-   
-    
 }

@@ -6,15 +6,9 @@ internal class Program
     private static void Main(string[] args)
     {
         ReadFromConsole readParametr = new ReadFromConsole();
-        var itemList = new ObservableCollection<Item>();
-        
         var shop = new Shop();
-        var customer = new Customer("Alice");
-        itemList.CollectionChanged += customer.OnItemChanged;
-        var customer1 = new Customer("Bruce");
-        itemList.CollectionChanged += customer1.OnItemChanged;
-        var customer2 = new Customer("Peter");
-        itemList.CollectionChanged += customer1.OnItemChanged;
+        shop.AddCustomer(new Customer());
+        var count = 1;
 
         var i = 0;
         while (true)
@@ -27,26 +21,25 @@ internal class Program
             }
             else if (enteredChar == "A")
             {
-                i ++;
-                var item = new Item();
-                item.Id = i;
-                item.Name = "товар от " + DateTime.Now.ToString();
-                shop.Add(itemList, item);
-               
+                Console.CursorLeft = 0;
+                shop.Add(new Item() { Id = count, Name = $"Товар от {DateTime.Now}" });
+                count++;
+
             }
             else if (enteredChar == "D")
             {
                 Console.WriteLine("Какой номер товара вы хотите удалить? Введите номер товара: ");
-                var itemNumber = readParametr.ReadNumbersFromConsole();
-
-                try
+                Console.CursorLeft = 0;
+                int id;
+                while (true)
                 {
-                    shop.Remove(itemList, itemNumber);
-                }
-                catch (Exception ex)
-                {
-                    string mes = ex.Message;
-                    Console.WriteLine(mes);
+                    var isID = int.TryParse(Console.ReadLine(), out id);
+                    if (isID)
+                    {
+                        shop.Remove(id);
+                        break;
+                    }
+                    else Console.WriteLine("ID - целое число");
                 }
             }
             else if (enteredChar == "X")
